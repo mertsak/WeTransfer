@@ -1,0 +1,323 @@
+/*  -----   Basic  ------   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f1f1f1;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/*  -----   Header  ------   */
+
+header {
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+header .nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(23, 24, 26, 0.15);
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+header .nav .nav-links .nav-link {
+  padding: 0.8rem 1.2rem;
+  border-right: 1px solid rgba(23, 24, 26, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+header .nav .nav-links .nav-link:hover {
+  background-color: #f7f9fa;
+  cursor: pointer;
+}
+
+header .nav .nav-links .nav-link .nav-item {
+  color: black;
+  font-weight: 500;
+}
+
+header .nav .nav-links .nav-link:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+header .nav .nav-links .nav-link:last-child {
+  border-right: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/*  -----   Main  ------   */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/*  -----   Main Left  ------   */
+
+.main .left-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 100%;
+  padding-bottom: 5rem;
+}
+
+/*  -----   Main Right  ------   */
+
+.main .right-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*  -----   Upload  ------   */
+
+.main .upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom: 1px solid rgba(23, 24, 26, 0.15);
+}
+
+.main .upload-container .upload-content {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.main .upload-container .upload-content .plus-bg {
+  background-color: blue;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .upload-container .upload-content .plus-bg:hover {
+  background-color: rgb(135, 135, 255);
+}
+
+.main .upload-container .upload-content .plus-bg i {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+}
+
+.main .upload-container .upload-content span {
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.main .upload-container .transfer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.main .upload-container .transfer-content .dot-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: blue;
+  border: 1px solid blue;
+  padding: 0.2rem 0.3rem;
+  cursor: pointer;
+}
+
+.main .upload-container .transfer-content .dot-bg i {
+  font-size: 1rem;
+}
+
+.main .upload-container .transfer-content .transfer-btn {
+  background-color: #babcbf;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.main .upload-container .transfer-content .transfer-btn:hover {
+  background-color: #cccccc;
+}
+
+/*  -----   Form  ------   */
+
+.main .form-content {
+  width: 100%;
+}
+
+.main .form-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid rgba(23, 24, 26, 0.15);
+}
+
+.main .form-content form input {
+  width: 100%;
+  border-top: 1px solid rgba(23, 24, 26, 0.15) !important;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  background: transparent;
+}
+
+/*  -----   Feedback  ------   */
+
+.main .feedback-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.main .feedback-container .feedback-header {
+  font-size: 2.5rem;
+  max-width: 300px;
+  padding: 1rem 0;
+  line-height: 4.2rem;
+}
+
+.main .feedback-container .feedback-header h1 {
+  font-weight: 800;
+}
+
+.main .feedback-container .feedback-content {
+  max-width: 350px;
+  padding: 1rem 0;
+}
+
+.main .feedback-container .feedback-content p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.feedback-container .feedback-btn {
+  padding: 1rem 0;
+}
+
+.feedback-container .feedback-btn .compare-btn {
+  background-color: #161616;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.feedback-container .feedback-btn .compare-btn:hover {
+  background-color: transparent;
+  color: #161616;
+  border-color: #161616;
+}
+
+/*  -----   image  ------   */
+
+.main .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .image-container .image {
+  object-fit: cover;
+  max-width: 600px;
+}
+
+/*  -----   WeTrasnfer  ------   */
+
+.we-transfer {
+  position: absolute;
+  bottom: 80px;
+  left: 32px;
+}
+
+.we-transfer h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+/*  -----   Form input Focus Effect  ------   */
+
+.col-3 {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.effect-16 ~ label {
+  position: absolute;
+  left: 16px;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect-16:focus ~ label,
+textarea .has-content.effect-16 ~ label {
+  top: 1px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
